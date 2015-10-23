@@ -29,14 +29,14 @@
 
 - (void)setupInitialValues
 {
-    self.data = @[
+    self.data = [@[
       [[City alloc] initWithName: @"Sao Paulo" imageName: @"sp"],
       [[City alloc] initWithName: @"Belo Horizonte" imageName: @"bh"],
       [[City alloc] initWithName: @"Rio de Janeiro" imageName: @"rio"],
       [[City alloc] initWithName: @"Porto Alegre" imageName: @"poa"],
       [[City alloc] initWithName: @"Salvador" imageName: @"salvador"],
-      [[City alloc] initWithName: @"Brasilia" imageName: @"brasilia"]
-    ];
+      [[City alloc] initWithName: @"Brasilia" imageName: @"brasilia"]]
+       mutableCopy];
 }
 
 #pragma mark - UITableViewDataSource
