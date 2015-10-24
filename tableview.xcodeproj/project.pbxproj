@@ -18,6 +18,7 @@
 		3B459B051BDA8D1D004AE35F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B459AFE1BDA8D1D004AE35F /* main.m */; };
 		3B459B091BDA9989004AE35F /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B459B081BDA9989004AE35F /* City.m */; };
 		3B459B0D1BDA9BBD004AE35F /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B459B0C1BDA9BBD004AE35F /* CityCell.m */; };
+		3B87541E1BDBA7CC00A2DCBB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B87541D1BDBA7CC00A2DCBB /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		3B459B081BDA9989004AE35F /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		3B459B0B1BDA9BBD004AE35F /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
 		3B459B0C1BDA9BBD004AE35F /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		3B87541C1BDBA7CC00A2DCBB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3B87541D1BDBA7CC00A2DCBB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 			children = (
 				3B459AF41BDA8D1D004AE35F /* ViewController.h */,
 				3B459AF51BDA8D1D004AE35F /* ViewController.m */,
+				3B87541C1BDBA7CC00A2DCBB /* DetailViewController.h */,
+				3B87541D1BDBA7CC00A2DCBB /* DetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				3B459B051BDA8D1D004AE35F /* main.m in Sources */,
 				3B459B091BDA9989004AE35F /* City.m in Sources */,
 				3B459B001BDA8D1D004AE35F /* ViewController.m in Sources */,
+				3B87541E1BDBA7CC00A2DCBB /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +566,7 @@
 				3B459AE91BDA8CD1004AE35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B459AEA1BDA8CD1004AE35F /* Build configuration list for PBXNativeTarget "tableviewTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +575,7 @@
 				3B459AEC1BDA8CD1004AE35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B459AED1BDA8CD1004AE35F /* Build configuration list for PBXNativeTarget "tableviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +584,7 @@
 				3B459AEF1BDA8CD1004AE35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
