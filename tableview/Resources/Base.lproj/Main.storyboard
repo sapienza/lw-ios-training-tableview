@@ -64,6 +64,7 @@
                                         <connections>
                                             <outlet property="backgroundImageView" destination="Bjf-YD-Oso" id="DgA-qi-jyn"/>
                                             <outlet property="nameLabel" destination="cY1-8U-i2P" id="AQM-cs-o3K"/>
+                                            <segue destination="MR2-y5-b0g" kind="show" id="aZW-wz-Eyg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -106,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVi-51-wek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="1285"/>
+            <point key="canvasLocation" x="1213" y="1019"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0sD-1Y-OUP">
