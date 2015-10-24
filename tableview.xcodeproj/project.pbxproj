@@ -19,6 +19,7 @@
 		3B459B091BDA9989004AE35F /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B459B081BDA9989004AE35F /* City.m */; };
 		3B459B0D1BDA9BBD004AE35F /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B459B0C1BDA9BBD004AE35F /* CityCell.m */; };
 		3B87541E1BDBA7CC00A2DCBB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B87541D1BDBA7CC00A2DCBB /* DetailViewController.m */; };
+		3B8754211BDBE90600A2DCBB /* UINavigationController+monkeyPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8754201BDBE90600A2DCBB /* UINavigationController+monkeyPatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		3B459B0C1BDA9BBD004AE35F /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
 		3B87541C1BDBA7CC00A2DCBB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3B87541D1BDBA7CC00A2DCBB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3B87541F1BDBE90600A2DCBB /* UINavigationController+monkeyPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+monkeyPatch.h"; sourceTree = "<group>"; };
+		3B8754201BDBE90600A2DCBB /* UINavigationController+monkeyPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+monkeyPatch.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				3B459AFD1BDA8D1D004AE35F /* Info.plist */,
+				3B87541F1BDBE90600A2DCBB /* UINavigationController+monkeyPatch.h */,
+				3B8754201BDBE90600A2DCBB /* UINavigationController+monkeyPatch.m */,
 				3B459AFE1BDA8D1D004AE35F /* main.m */,
 			);
 			path = SupportingFiles;
@@ -336,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B459AFF1BDA8D1D004AE35F /* AppDelegate.m in Sources */,
+				3B8754211BDBE90600A2DCBB /* UINavigationController+monkeyPatch.m in Sources */,
 				3B459B0D1BDA9BBD004AE35F /* CityCell.m in Sources */,
 				3B459B051BDA8D1D004AE35F /* main.m in Sources */,
 				3B459B091BDA9989004AE35F /* City.m in Sources */,
