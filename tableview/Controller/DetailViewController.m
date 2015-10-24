@@ -10,6 +10,7 @@
 
 @interface DetailViewController ()
 @property (nonatomic, weak) IBOutlet UILabel *cityName;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
 @end
 
 @implementation DetailViewController
@@ -21,6 +22,7 @@
     NSLog(@"%@", self.city.name);
 
     self.cityName.text = self.city.name;
+    self.backgroundImage.image = [UIImage imageNamed:self.city.imageName];
 
 }
 
