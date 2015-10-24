@@ -24,6 +24,8 @@
     self.cityName.text = self.city.name;
     self.backgroundImage.image = [UIImage imageNamed:self.city.imageName];
 
+    self.title = self.city.name;
+
 }
 
 - (void)didReceiveMemoryWarning {

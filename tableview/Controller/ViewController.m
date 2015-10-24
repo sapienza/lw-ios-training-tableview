@@ -31,6 +31,8 @@
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
                                                                      style:UIBarButtonItemStylePlain target:nil
                                                                      action:nil];
+
+    self.title = @"Cidades";
 }
 
 #pragma mark - Navigation
