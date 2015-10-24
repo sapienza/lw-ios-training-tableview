@@ -9,7 +9,7 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
-
+@property (nonatomic, weak) IBOutlet UILabel *cityName;
 @end
 
 @implementation DetailViewController
@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view.
 
     NSLog(@"%@", self.city.name);
+
+    self.cityName.text = self.city.name;
+
 }
 
 - (void)didReceiveMemoryWarning {
