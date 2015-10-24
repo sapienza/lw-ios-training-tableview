@@ -12,6 +12,8 @@
 #import "City.h"
 #import "CityCell.h"
 
+#import "UINavigationController+monkeyPatch.h"
+
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -55,6 +57,15 @@
       [[City alloc] initWithName: @"Salvador" imageName: @"salvador"],
       [[City alloc] initWithName: @"Brasilia" imageName: @"brasilia"]]
        mutableCopy];
+}
+
+// Custom status bar for this view controller
+// DetailViewController will inherit from the [[UINavigationBar appearance] in AppDelegate
+// Remeber to change the info.plist "View controller-based status bar appearance" to YES
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - UITableViewDataSource
