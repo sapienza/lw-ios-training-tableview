@@ -74,16 +74,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-//    City *city = self.data[indexPath.row];
-//    
-//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Cidade" message: city.name preferredStyle: UIAlertControllerStyleAlert];
-//    
-//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: nil];
-//    [alertController addAction:okAction];
-//    
-//    [self presentViewController:alertController animated:YES completion:nil];
-//}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    City *city = self.data[indexPath.row];
+
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Cidade" message: city.name preferredStyle: UIAlertControllerStyleAlert];
+
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Detalhe" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+
+        [self performSegueWithIdentifier:(@"CityDetailSegue") sender: nil];
+    }];
+
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler: nil];
+
+    [alertController addAction:okAction];
+    [alertController addAction:cancelAction];
+
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
