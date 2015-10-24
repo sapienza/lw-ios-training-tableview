@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
+
 #import "City.h"
 #import "CityCell.h"
 
@@ -25,6 +27,17 @@
     
     // Do any additional setup after loading the view, typically from a nib.
     [self setupInitialValues];
+}
+
+
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"CityDetailSegue"]) {
+        DetailViewController *detailVC = segue.destinationViewController;
+        City *city = self.data[self.tableView.indexPathForSelectedRow.row];
+        detailVC.city = city;
+    }
 }
 
 - (void)setupInitialValues
