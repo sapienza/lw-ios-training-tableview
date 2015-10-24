@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eod-lH-1u3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eod-lH-1u3">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -76,7 +76,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="eod-lH-1u3" secondAttribute="trailing" id="75a-8R-cNd"/>
-                            <constraint firstItem="eod-lH-1u3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-44" id="GjM-mX-EAx"/>
+                            <constraint firstItem="eod-lH-1u3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GjM-mX-EAx"/>
                             <constraint firstItem="eod-lH-1u3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OPd-dI-hsJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eod-lH-1u3" secondAttribute="bottom" id="wC4-b4-1qE"/>
                         </constraints>
@@ -84,7 +84,7 @@
                     <navigationItem key="navigationItem" id="SM5-7I-k5H"/>
                     <connections>
                         <outlet property="tableView" destination="eod-lH-1u3" id="IwP-U1-gbX"/>
-                        <segue destination="MR2-y5-b0g" kind="presentation" identifier="CityDetailSegue" id="5bP-Tt-fnQ"/>
+                        <segue destination="MR2-y5-b0g" kind="show" identifier="CityDetailSegue" id="5bP-Tt-fnQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,31 +103,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyp-41-Kex">
-                                <rect key="frame" x="-1" y="145" width="600" height="432"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iA-Fp-MDo">
-                                <rect key="frame" x="0.0" y="87" width="600" height="60"/>
-                                <color key="backgroundColor" red="0.0" green="0.22764042496481024" blue="0.5252525252525253" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City NAME" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjH-47-QFi">
-                                <rect key="frame" x="248" y="103" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjH-47-QFi">
+                                <rect key="frame" x="259" y="290" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tak-Rd-yLk">
-                                <rect key="frame" x="270" y="42" width="59" height="30"/>
-                                <state key="normal" title="CANCEL"/>
-                                <connections>
-                                    <action selector="cancelButtonTap:" destination="MR2-y5-b0g" eventType="touchUpInside" id="Wsu-SH-7F6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZjH-47-QFi" firstAttribute="centerY" secondItem="Cim-nW-de9" secondAttribute="centerY" id="TyK-31-D3d"/>
+                            <constraint firstItem="ZjH-47-QFi" firstAttribute="centerX" secondItem="Cim-nW-de9" secondAttribute="centerX" id="dO1-Ee-bPY"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundImage" destination="pyp-41-Kex" id="2kL-jA-sy2"/>
                         <outlet property="cityName" destination="ZjH-47-QFi" id="JCc-lt-gBI"/>
                     </connections>
                 </viewController>
